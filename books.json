@@ -1,0 +1,168 @@
+[
+    {
+        "id": 1,
+        "title": "Responsive Design with Bootstrap",
+        "author": "Mark Otto and Jacob Thornton",
+        "description": "Responsive design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. Bootstrap is a popular framework for building responsive, mobile-first websites. This book covers the basics of responsive design and provides an in-depth look at how to use Bootstrap to build responsive web pages.",
+        "category": "UX",
+        "price": 25,
+        "image": "book1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "HTML - An Introduction",
+        "author": "John Doe",
+        "description": "HTML is the standard markup language used to create web pages. This book provides an introduction to HTML, including the syntax, tags, and attributes used to structure web content. It also covers best practices for writing clean, well-organized HTML code.",
+        "category": "HTML",
+        "price": 20,
+        "image": "book2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "CSS - An Introduction",
+        "author": "Jane Smith",
+        "description": "CSS is used to style web pages and make them look visually appealing. This book provides an introduction to CSS, including the syntax, selectors, and properties used to style HTML elements. It also covers responsive design and best practices for writing maintainable CSS code.",
+        "category": "CSS",
+        "price": 22,
+        "image": "book3.jpg"
+    },
+    {
+        "id": 4,
+        "title": "JavaScript - An Introduction",
+        "author": "Bob Johnson",
+        "description": "JavaScript is a programming language used to create interactive web content. This book provides an introduction to JavaScript, including the syntax, data types, and control structures used in the language. It also covers DOM manipulation, event handling, and best practices for writing clean, maintainable JavaScript code.",
+        "category": "JavaScript",
+        "price": 33,
+        "image": "book4.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Web Design with HTML, CSS, JavaScript and jQuery Set",
+        "author": "Jon Duckett",
+        "description": "This set of three books provides a comprehensive introduction to web design using HTML, CSS, JavaScript, and jQuery. The books cover the basics of each language and provide practical examples and exercises to help readers build their skills. Whether you're a beginner or an experienced web designer, this set is a must-have resource.",
+        "category": "UX",
+        "price": 51,
+        "image": "book5.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Mastering HTML",
+        "author": "John Doe",
+        "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
+        "category": "HTML",
+        "price": 84
+    },
+    {
+        "id": 7,
+        "title": "Advanced CSS Techniques",
+        "author": "Jane Smith",
+        "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
+        "category": "CSS",
+        "price": 125
+    },
+    {
+        "id": 8,
+        "title": "JavaScript for Beginners",
+        "author": "John Smith",
+        "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
+        "category": "JavaScript",
+        "price": 92
+    },
+    {
+        "id": 9,
+        "title": "UX Fundamentals",
+        "author": "Jane Doe",
+        "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
+        "category": "UX",
+        "price": 112
+    },
+    {
+        "id": 10,
+        "title": "Advanced JavaScript",
+        "author": "John Doe",
+        "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
+        "category": "JavaScript",
+        "price": 158
+    },
+    {
+        "id": 11,
+        "title": "Responsive Design Principles",
+        "author": "Jane Smith",
+        "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
+        "category": "UX",
+        "price": 104
+    },
+    {
+        "id": 12,
+        "title": "CSS Layout Techniques",
+        "author": "John Smith",
+        "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
+        "category": "CSS",
+        "price": 79
+    },
+    {
+        "id": 13,
+        "title": "Introduction to UX Design",
+        "author": "Jane Doe",
+        "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
+        "category": "UX",
+        "price": 99
+    },
+    {
+        "id": 14,
+        "title": "JavaScript Frameworks",
+        "author": "John Doe",
+        "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
+        "category": "JavaScript",
+        "price": 139
+    },
+    {
+        "id": 15,
+        "title": "HTML5 Best Practices",
+        "author": "Jane Smith",
+        "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
+        "category": "HTML",
+        "price": 81
+    },
+    {
+        "id": 16,
+        "title": "Modern CSS: Mastering the Fundamentals",
+        "author": "Joshua Blankenship",
+        "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
+        "category": "CSS",
+        "price": 41
+    },
+    {
+        "id": 17,
+        "title": "CSS Secrets: Better Solutions to Everyday Web Design Problems",
+        "author": "Lea Verou",
+        "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
+        "category": "CSS",
+        "price": 47
+    },
+    {
+        "id": 18,
+        "title": "JavaScript and JQuery: Interactive Front-End Web Development",
+        "author": "Jon Duckett",
+        "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
+        "category": "JavaScript",
+        "price": 61
+    },
+    {
+        "id": 19,
+        "title": "HTML and CSS: Design and Build Websites",
+        "author": "Jon Duckett",
+        "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
+        "category": "HTML",
+        "price": 69
+    },
+    {
+        "id": 20,
+        "title": "Learning Web Design: A Beginner's Guide to HTML, CSS, JavaScript, and Web Graphics",
+        "author": "Jennifer Niederst Robbins",
+        "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
+        "category": "HTML",
+        "price": 12
+    }
+    
+]

@@ -1,0 +1,132 @@
+/* Cart container */
+.cart-container {
+    max-width: 40%;
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    z-index: 9999; /* To make sure the cart is always on top of other elements */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  
+  #bookstore {
+    margin-top: 70px;
+  }
+  
+  #detailed-view {
+    margin-top: 70px;
+  }
+  
+  #cart-button {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 9999;
+    background-color: rgba(6, 76, 167, 0.678);
+    border-color: rgba(6, 30, 167, 0.534);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #cart-button svg {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+  }
+  
+  .cart-count {
+    background-color: rgba(0, 26, 255, 0);
+    position: absolute;
+    right: 0px;
+    font-size: 0.8rem;
+    
+  }
+  
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .cart-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .cart-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: #f2f2f2;
+  }
+  
+  .cart-table th:last-child,
+  .cart-table td:last-child {
+    text-align: right;
+  }
+  
+  .cart-table td:first-child {
+    width: 60%;
+  }
+  
+  .cart-table td:nth-child(2) {
+    width: 20%;
+  }
+  
+  .cart-table td:last-child {
+    width: 20%;
+  }
+  
+  .cart-total {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .cart-total span {
+    font-weight: bold;
+  }
+  
+  .container-fluid {
+    padding-top: 56px; /* height of navbar */
+  }
+  
+  .bookstore {
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (max-width: 767px) {
+    .cart-container {
+        max-width: 100%;
+        left: 10px;
+        right: 10px;
+    }
+    .cart-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .cart-header div {
+      width: 100%;
+    }
+    .cart-header div:nth-child(1) {
+      order: 1;
+    }
+    .cart-header div:nth-child(2) {
+      order: 2;
+    }
+    .cart-header div:nth-child(3) {
+      order: 3;
+    }
+    .cart-header div:nth-child(4) {
+      display: none;
+    }
+  }
+  
