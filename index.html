@@ -24,58 +24,59 @@
 
 
     <!-- Shopping cart button -->
-    <button id="cart-button" class="btn btn-primary position-fixed top-0 end-0 m-3 ">
-        <svg id="cart-svg" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-            <path
-                d="M13.5 21c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m-6 2c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m16.5-16h-2.964l-3.642 15h-13.321l-4.073-13.003h19.522l.728-2.997h3.75v1zm-22.581 2.997l3.393 11.003h11.794l2.674-11.003h-17.861z" />
+    <button id="cart-button" class="btn btn-primary position-fixed top-0 end-0 m-3 mx-5">
+        <svg id="cart-svg" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+            clip-rule="evenodd">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>    
         </svg>
-        <span id="cart-count"class="badge cart-count">0</span>
+        <span id="cart-count" class="badge cart-count">0</span>
     </button>
+
+
+    <div id="Filters-sorting" class="mx-5" >
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <select class="form-select filter-select" aria-label="Filter by Category" id="categories-dropdown">
+                    <option selected>Filter by Category</option>
+
+                </select>
+            </div>
+            <div class="col-md-4">
+                <select class="form-select filter-select" aria-label="Filter by Author" id="authors-dropdown">
+                    <option selected>Filter by Author</option>
+
+                </select>
+            </div>
+            <div class="col-md-4">
+                <div class="input-group">
+                    <span class="input-group-text">$</span>
+                    <input type="number" class="form-control" placeholder="Min Price" id="min-price">
+                    <span class="input-group-text">-</span>
+                    <input type="number" class="form-control" placeholder="Max Price" id="max-price">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <label for="sort-dropdown" class="form-label">Sort By:</label>
+                <select class="form-select" id="sort-dropdown">
+                    <option value="title-asc">Title (Ascending)</option>
+                    <option value="title-desc">Title (Descending)</option>
+                    <option value="price-asc">Price (Ascending)</option>
+                    <option value="price-desc">Price (Descending)</option>
+                    <option value="author-asc">Author (Ascending)</option>
+                    <option value="author-desc">Author (Descending)</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
 
 
     <!-- Regular Book View -->
     <div id="bookstore" class="row bookstore mx-5">
-        <div class="row mb-4">
-            <div class="col-md-4">
-              <select class="form-select filter-select" aria-label="Filter by Category">
-                <option selected>Filter by Category</option>
-                <option value="category1">Category 1</option>
-                <option value="category2">Category 2</option>
-                <option value="category3">Category 3</option>
-              </select>
-            </div>
-            <div class="col-md-4">
-              <select class="form-select filter-select" aria-label="Filter by Author">
-                <option selected>Filter by Author</option>
-                <option value="author1">Author 1</option>
-                <option value="author2">Author 2</option>
-                <option value="author3">Author 3</option>
-              </select>
-            </div>
-            <div class="col-md-4">
-              <div class="input-group">
-                <span class="input-group-text">$</span>
-                <input type="number" class="form-control" placeholder="Min Price">
-                <span class="input-group-text">-</span>
-                <input type="number" class="form-control" placeholder="Max Price">
-              </div>
-            </div>
-          </div>
-          
-          <div class="row mb-4">
-            <div class="col-md-12">
-              <div class="btn-group" role="group" aria-label="Sorting Options">
-                <button type="button" class="btn btn-secondary sort-button" data-sortby="title-asc">Title (Ascending)</button>
-                <button type="button" class="btn btn-secondary sort-button" data-sortby="title-desc">Title (Descending)</button>
-                <button type="button" class="btn btn-secondary sort-button" data-sortby="price-asc">Price (Ascending)</button>
-                <button type="button" class="btn btn-secondary sort-button" data-sortby="price-desc">Price (Descending)</button>
-                <button type="button" class="btn btn-secondary sort-button" data-sortby="author-asc">Author (Ascending)</button>
-                <button type="button" class="btn btn-secondary sort-button" data-sortby="author-desc">Author (Descending)</button>
-              </div>
-            </div>
-          </div>
-          
-  
     </div>
 
     <!-- Detailed Book View (hidden by default) -->
@@ -102,15 +103,19 @@
     <!-- Shopping Cart -->
     <div id="cart-container" class="cart-container">
         <div class="cart">
-        
-          <div id="cart-items"></div>
-          
-          <div class="cart-footer">
-            <button type="button" class="btn btn-primary" id="checkout-button">Checkout</button>
-          </div>
+
+            <div id="cart-items"></div>
+
+            <div class="cart-footer">
+                <button type="button" class="btn btn-primary" id="checkout-button">Checkout</button>
+            </div>
         </div>
-      </div>
-      
+    </div>
+
+
+
+
+
 
     <script src="books.js"></script>
 

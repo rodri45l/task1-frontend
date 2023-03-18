@@ -6,7 +6,7 @@
         "description": "Responsive design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. Bootstrap is a popular framework for building responsive, mobile-first websites. This book covers the basics of responsive design and provides an in-depth look at how to use Bootstrap to build responsive web pages.",
         "category": "UX",
         "price": 25,
-        "image": "book1.jpg"
+        "image": "./images/book1.jpg"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "description": "HTML is the standard markup language used to create web pages. This book provides an introduction to HTML, including the syntax, tags, and attributes used to structure web content. It also covers best practices for writing clean, well-organized HTML code.",
         "category": "HTML",
         "price": 20,
-        "image": "book2.jpg"
+        "image": "./images/book2.jpg"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "description": "CSS is used to style web pages and make them look visually appealing. This book provides an introduction to CSS, including the syntax, selectors, and properties used to style HTML elements. It also covers responsive design and best practices for writing maintainable CSS code.",
         "category": "CSS",
         "price": 22,
-        "image": "book3.jpg"
+        "image": "./images/book3.jpg"
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@
         "description": "JavaScript is a programming language used to create interactive web content. This book provides an introduction to JavaScript, including the syntax, data types, and control structures used in the language. It also covers DOM manipulation, event handling, and best practices for writing clean, maintainable JavaScript code.",
         "category": "JavaScript",
         "price": 33,
-        "image": "book4.jpg"
+        "image": "./images/book4.jpg"
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@
         "description": "This set of three books provides a comprehensive introduction to web design using HTML, CSS, JavaScript, and jQuery. The books cover the basics of each language and provide practical examples and exercises to help readers build their skills. Whether you're a beginner or an experienced web designer, this set is a must-have resource.",
         "category": "UX",
         "price": 51,
-        "image": "book5.jpg"
+        "image": "./images/book5.jpg"
     },
     {
         "id": 6,
@@ -50,7 +50,8 @@
         "author": "John Doe",
         "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
         "category": "HTML",
-        "price": 84
+        "price": 84,
+        "image": "./images/book6.jpg"
     },
     {
         "id": 7,
@@ -58,7 +59,8 @@
         "author": "Jane Smith",
         "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
         "category": "CSS",
-        "price": 125
+        "price": 125,
+        "image": "./images/book7.jpg"
     },
     {
         "id": 8,
@@ -66,7 +68,8 @@
         "author": "John Smith",
         "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
         "category": "JavaScript",
-        "price": 92
+        "price": 92,
+        "image": "./images/book8.jpg"
     },
     {
         "id": 9,
@@ -74,7 +77,8 @@
         "author": "Jane Doe",
         "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
         "category": "UX",
-        "price": 112
+        "price": 112,
+        "image": "./images/book9.jpg"
     },
     {
         "id": 10,
@@ -82,7 +86,8 @@
         "author": "John Doe",
         "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
         "category": "JavaScript",
-        "price": 158
+        "price": 158,
+        "image": "./images/book10.jpg"
     },
     {
         "id": 11,
@@ -90,7 +95,8 @@
         "author": "Jane Smith",
         "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
         "category": "UX",
-        "price": 104
+        "price": 104,
+        "image": "./images/book11.jpg"
     },
     {
         "id": 12,
@@ -98,7 +104,8 @@
         "author": "John Smith",
         "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
         "category": "CSS",
-        "price": 79
+        "price": 79,
+        "image": "./images/book12.jpg"
     },
     {
         "id": 13,
@@ -106,7 +113,8 @@
         "author": "Jane Doe",
         "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
         "category": "UX",
-        "price": 99
+        "price": 99,
+        "image": "./images/book13.jpg"
     },
     {
         "id": 14,
@@ -114,7 +122,8 @@
         "author": "John Doe",
         "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
         "category": "JavaScript",
-        "price": 139
+        "price": 139,
+        "image": "./images/book14.jpg"
     },
     {
         "id": 15,
@@ -122,7 +131,8 @@
         "author": "Jane Smith",
         "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
         "category": "HTML",
-        "price": 81
+        "price": 81,
+        "image": "./images/book15.jpg"
     },
     {
         "id": 16,
@@ -130,7 +140,8 @@
         "author": "Joshua Blankenship",
         "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
         "category": "CSS",
-        "price": 41
+        "price": 41,
+        "image": "./images/book16.jpg"
     },
     {
         "id": 17,
@@ -138,15 +149,17 @@
         "author": "Lea Verou",
         "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
         "category": "CSS",
-        "price": 47
+        "price": 47,
+        "image": "./images/book17.jpg"
     },
     {
         "id": 18,
-        "title": "JavaScript and JQuery: Interactive Front-End Web Development",
-        "author": "Jon Duckett",
+        "title": "Eloquent Javascript, 3rd Edition : A Modern Introduction to Programming",
+        "author": "Marijn Havebeke",
         "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
         "category": "JavaScript",
-        "price": 61
+        "price": 61,
+        "image": "./images/book18.jpg"
     },
     {
         "id": 19,
@@ -154,7 +167,8 @@
         "author": "Jon Duckett",
         "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
         "category": "HTML",
-        "price": 69
+        "price": 69,
+        "image": "./images/book19.jpg"
     },
     {
         "id": 20,
@@ -162,7 +176,8 @@
         "author": "Jennifer Niederst Robbins",
         "description": "Lore Ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum diam et diam lobortis, at venenatis nisl feugiat. Integer porttitor ex a ligula consequat, sed euismod augue bibendum. Maecenas vel velit at mauris hendrerit commodo. Ut a velit sit amet purus pulvinar interdum. Sed eu ligula ut mauris bibendum hendrerit. Sed vel turpis vel metus pellentesque rutrum nec in eros. Morbi ut pharetra justo. Nulla ut ipsum at velit consequat vulputate quis vitae mi.",
         "category": "HTML",
-        "price": 12
+        "price": 12,
+        "image": "./images/book20.jpg"
     }
     
 ]

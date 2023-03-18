@@ -48,6 +48,8 @@ function renderCart() {
     cartContainer.innerHTML = output;
 }
 
+
+
 fetch('./books.json')
     .then(response => response.json())
     .then(books => {
@@ -55,46 +57,7 @@ fetch('./books.json')
 
         booksData = books; // assign the fetched data to the booksData variable
         renderBooks(booksData); // render the initial list of books
-        let output = `<div class="row mb-4">
-        <div class="col-md-4">
-          <select class="form-select filter-select" aria-label="Filter by Category">
-            <option selected>Filter by Category</option>
-            <option value="category1">Category 1</option>
-            <option value="category2">Category 2</option>
-            <option value="category3">Category 3</option>
-          </select>
-        </div>
-        <div class="col-md-4">
-          <select class="form-select filter-select" aria-label="Filter by Author">
-            <option selected>Filter by Author</option>
-            <option value="author1">Author 1</option>
-            <option value="author2">Author 2</option>
-            <option value="author3">Author 3</option>
-          </select>
-        </div>
-        <div class="col-md-4">
-          <div class="input-group">
-            <span class="input-group-text">$</span>
-            <input type="number" class="form-control" placeholder="Min Price">
-            <span class="input-group-text">-</span>
-            <input type="number" class="form-control" placeholder="Max Price">
-          </div>
-        </div>
-      </div>
-      
-      <div class="row mb-4">
-      <div class="col-md-12">
-        <label for="sort-dropdown" class="form-label">Sort By:</label>
-        <select class="form-select" id="sort-dropdown">
-          <option value="title-asc">Title (Ascending)</option>
-          <option value="title-desc">Title (Descending)</option>
-          <option value="price-asc">Price (Ascending)</option>
-          <option value="price-desc">Price (Descending)</option>
-          <option value="author-asc">Author (Ascending)</option>
-          <option value="author-desc">Author (Descending)</option>
-        </select>
-      </div>
-    </div>
+        let output = `
     
       `;
 
@@ -169,31 +132,32 @@ fetch('./books.json')
 
         function viewDetails(event) {
             const bookId = event.target.dataset.bookId;
-            const bookTitle = event.target.dataset.bookTitle;
-            const bookPrice = parseFloat(event.target.dataset.bookPrice);
-
+            const book = books.find(book => book.id === parseInt(bookId));
+            const bookTitle = book.title;
+            const bookPrice = parseFloat(book.price);
+        
             // Hide the regular view
             const regularView = document.querySelector('.bookstore');
             regularView.classList.add('d-none');
-
+        
             // Show the detailed view
             const detailedView = document.querySelector('#detailed-view');
             detailedView.classList.remove('d-none');
-
+        
             // Populate the detailed view with book information
             const detailedImage = document.querySelector('#detailed-image');
             const detailedTitle = document.querySelector('#detailed-title');
             const detailedDescription = document.querySelector('#detailed-description');
             const detailedAuthor = document.querySelector('#detailed-author');
             const detailedPrice = document.querySelector('#detailed-price');
-
-            detailedImage.src = books[bookId].image;
-            detailedImage.alt = books[bookId].title;
-            detailedTitle.textContent = books[bookId].title;
-            detailedDescription.textContent = books[bookId].description;
-            detailedAuthor.textContent = books[bookId].author;
-            detailedPrice.textContent = `$${books[bookId].price.toFixed(2)}`;
-
+        
+            detailedImage.src = book.image;
+            detailedImage.alt = book.title;
+            detailedTitle.textContent = book.title;
+            detailedDescription.textContent = book.description;
+            detailedAuthor.textContent = book.author;
+            detailedPrice.textContent = `$${book.price.toFixed(2)}`;
+        
             // Update the add to cart button with the book information
             const addToCartButton = document.querySelector('#add-to-cart-button');
             addToCartButton.dataset.bookId = bookId;
@@ -212,47 +176,7 @@ fetch('./books.json')
         }
 
         function renderBooks(booksData) {
-            let output = `<div class="row mb-4">
-        <div class="col-md-4">
-          <select class="form-select filter-select" aria-label="Filter by Category">
-            <option selected>Filter by Category</option>
-            <option value="category1">Category 1</option>
-            <option value="category2">Category 2</option>
-            <option value="category3">Category 3</option>
-          </select>
-        </div>
-        <div class="col-md-4">
-          <select class="form-select filter-select" aria-label="Filter by Author">
-            <option selected>Filter by Author</option>
-            <option value="author1">Author 1</option>
-            <option value="author2">Author 2</option>
-            <option value="author3">Author 3</option>
-          </select>
-        </div>
-        <div class="col-md-4">
-          <div class="input-group">
-            <span class="input-group-text">$</span>
-            <input type="number" class="form-control" placeholder="Min Price">
-            <span class="input-group-text">-</span>
-            <input type="number" class="form-control" placeholder="Max Price">
-          </div>
-        </div>
-      </div>
-      
-      <div class="row mb-4">
-      <div class="col-md-12">
-        <label for="sort-dropdown" class="form-label">Sort By:</label>
-        <select class="form-select" id="sort-dropdown">
-          <option value="title-asc">Title (Ascending)</option>
-          <option value="title-desc">Title (Descending)</option>
-          <option value="price-asc">Price (Ascending)</option>
-          <option value="price-desc">Price (Descending)</option>
-          <option value="author-asc">Author (Ascending)</option>
-          <option value="author-desc">Author (Descending)</option>
-        </select>
-      </div>
-    </div>
-    
+            let output = `
       `;
 
 
@@ -305,8 +229,8 @@ fetch('./books.json')
                 renderBooks(sortedBooks);
 
                 // Update the selected option in the sort dropdown
-    const sortOptionElement = document.querySelector(`#sort-dropdown option[value="${sortOption}"]`);
-    sortOptionElement.selected = true;
+                const sortOptionElement = document.querySelector(`#sort-dropdown option[value="${sortOption}"]`);
+                sortOptionElement.selected = true;
             });
 
             // re-add event listeners to the "Add to Cart" buttons
@@ -347,8 +271,88 @@ fetch('./books.json')
             // Render the sorted books
             renderBooks(sortedBooks);
             // Update the selected option in the sort dropdown
-    const sortOptionElement = document.querySelector(`#sort-dropdown option[value="${sortOption}"]`);
-    sortOptionElement.selected = true;
+            const sortOptionElement = document.querySelector(`#sort-dropdown option[value="${sortOption}"]`);
+            sortOptionElement.selected = true;
         });
+
+        fetch("books.json")
+            .then(response => response.json())
+            .then(data => {
+                // get categories and authors
+                categories = [...new Set(data.map(book => book.category))];
+                authors = [...new Set(data.map(book => book.author))];
+
+
+                const categorySelect = document.querySelector('#categories-dropdown');
+                categories.forEach(category => {
+                    const option = document.createElement('option');
+                    option.value = category.toLowerCase().replace(/ /g, '-');
+                    option.text = category;
+                    categorySelect.add(option);
+                });
+
+                // add authors to the author filter dropdown
+                const authorSelect = document.querySelector('#authors-dropdown');
+                authors.forEach(author => {
+                    const option = document.createElement('option');
+                    option.value = author.toLowerCase()
+                    option.text = author;
+                    authorSelect.add(option);
+                });
+
+
+                const minPriceInput = document.querySelector('#min-price');
+                const maxPriceInput = document.querySelector('#max-price');
+
+                categorySelect.addEventListener('change', handleFilterChange);
+                authorSelect.addEventListener('change', handleFilterChange);
+                minPriceInput.addEventListener('change', handleFilterChange);
+                maxPriceInput.addEventListener('change', handleFilterChange);
+
+                function handleFilterChange() {
+                    const selectedCategory = categorySelect.value;
+                    const selectedAuthor = authorSelect.value;
+                    const minPrice = minPriceInput.value !== '' ? Number(minPriceInput.value) : -Infinity;
+                    const maxPrice = maxPriceInput.value !== '' ? Number(maxPriceInput.value) : Infinity;
+
+                    const filteredBooks = books.filter(book => {
+
+                        
+                        if (selectedCategory !== 'Filter by Category' && book.category.toLowerCase() !== selectedCategory.toLowerCase()) {
+                            
+                            return false;
+                        }
+
+                        if (selectedAuthor !== 'Filter by Author' && book.author.toLowerCase() !== selectedAuthor.toLowerCase()) {
+
+                            
+                            return false;
+                        }
+
+                        if (book.price < minPrice || book.price > maxPrice) {
+                            return false;
+                        }
+
+                        return true;
+                    });
+
+                    console.log(filteredBooks)
+
+                    renderBooks(filteredBooks);
+                }
+
+
+            })
+            .catch(error => console.error(error));
     })
-    .catch(err => console.error(err)); 
+    .catch(err => console.error(err));
+
+
+
+
+
+
+
+
+
+
